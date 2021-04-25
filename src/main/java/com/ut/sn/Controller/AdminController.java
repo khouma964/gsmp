@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ut.sn.Modeles.Admin;
-import com.ut.sn.Modeles.UserModel;
 import com.ut.sn.Repository.AdminRepository;
 import com.ut.sn.Repository.UserRepository;
 import com.ut.sn.exception.ResourceNotFoundException;

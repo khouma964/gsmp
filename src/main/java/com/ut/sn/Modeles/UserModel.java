@@ -1,15 +1,13 @@
 package com.ut.sn.Modeles;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
 
 import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user_model")
 @NamedQueries({ @NamedQuery(name = "User.findAll", query = "SELECT u FROM UserModel u"),
 		@NamedQuery(name = "User.findByIduser", query = "SELECT u FROM UserModel u WHERE u.iduser = :iduser"),
 		@NamedQuery(name = "User.findByEmail", query = "SELECT u FROM UserModel u WHERE u.email = :email"),
@@ -18,18 +16,9 @@ public class UserModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Basic(optional = false)
-	@Column(name = "iduser")
 	private Integer iduser;
-	@Basic(optional = false)
-	@Column(name = "email")
 	private String email;
-	@Basic(optional = false)
-	@Column(name = "password")
 	private String password;
-	@Basic(optional = false)
-	@Column(name = "role")
-//	@Enumerated(EnumType.STRING)
 	private String role;
 	@OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
 	private Assistant assistant;
@@ -92,34 +81,6 @@ public class UserModel {
 		this.role = role;
 	}
 
-//	    public Assistant getAssistant() {
-//			return assistant;
-//		}
-//
-//		public void setAssistant(Assistant assistant) {
-//			this.assistant = assistant;
-//		}
-//
-//		public Medecin getMedecin() {
-//			return medecin;
-//		}
-//
-//		public void setMedecin(Medecin medecin) {
-//			this.medecin = medecin;
-//		}
-//
-//	public Patient getPatient() {
-//		return patient;
-//	}
-//
-//		public void setPatient(Patient patient) {
-//			this.patient = patient;
-//		}
-
-//	public Admin getAdmin() {
-//		return admin;
-//	}
-
 	@Override
 	public int hashCode() {
 		int hash = 0;
@@ -140,7 +101,4 @@ public class UserModel {
 		}
 		return true;
 	}
-
-	
-
 }

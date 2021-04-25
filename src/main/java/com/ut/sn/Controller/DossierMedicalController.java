@@ -1,6 +1,5 @@
 package com.ut.sn.Controller;
 
-import java.awt.PageAttributes.MediaType;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -19,13 +18,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ut.sn.Modeles.Consultation;
 import com.ut.sn.Modeles.Dossier_medical;
 import com.ut.sn.Modeles.Patient;
-import com.ut.sn.Modeles.RendezVous;
 import com.ut.sn.Modeles.UserModel;
 import com.ut.sn.Repository.DossierMedicalRepository;
 import com.ut.sn.Repository.PatientRepository;

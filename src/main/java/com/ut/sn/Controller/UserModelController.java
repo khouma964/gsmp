@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ut.sn.DTO.UserDTO;
-import com.ut.sn.Modeles.Patient;
 import com.ut.sn.Modeles.UserModel;
 import com.ut.sn.Repository.UserRepository;
 import com.ut.sn.Service.JwtResponse;

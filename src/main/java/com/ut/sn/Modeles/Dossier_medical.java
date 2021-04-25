@@ -1,9 +1,8 @@
 package com.ut.sn.Modeles;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -21,7 +20,12 @@ import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 @Table(name = "dossier_medical")
-public class Dossier_medical {
+public class Dossier_medical implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

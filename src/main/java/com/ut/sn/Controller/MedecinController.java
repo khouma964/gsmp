@@ -19,10 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ut.sn.Modeles.Dossier_medical;
 import com.ut.sn.Modeles.Medecin;
-import com.ut.sn.Modeles.Memos;
-import com.ut.sn.Modeles.Patient;
 import com.ut.sn.Modeles.UserModel;
 import com.ut.sn.Repository.MedecinRepository;
 import com.ut.sn.Repository.UserRepository;

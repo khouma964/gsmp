@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ut.sn.Modeles.Assistant;
-import com.ut.sn.Modeles.Patient;
 import com.ut.sn.Modeles.UserModel;
 import com.ut.sn.Repository.AssistantRepository;
 import com.ut.sn.Repository.UserRepository;
